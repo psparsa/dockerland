@@ -1,0 +1,11 @@
+{
+  "name": "docker-learning",
+  "version": "1.0.0",
+  "description": "a project for learning docker",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "source/server"
+  ]
+}
