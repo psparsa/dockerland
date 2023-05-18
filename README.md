@@ -1,4 +1,5 @@
-![banner](https://github.com/psparsa/dockerland/assets/57572461/9a0ad3da-2c4b-42bd-b1d9-e1f1a43b0255)
+![banner](https://github.com/psparsa/dockerland/assets/57572461/6a6b20a6-abfc-4a78-9dde-e06f0081d92b)
+
 
 <p align="center">
 DockerLand is a super-minimal fullstack project that showcases the use of Docker for deployment and development in an isolated environment.
