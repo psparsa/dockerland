@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  server:
+    build:
+      context: ./source/server
+      dockerfile: Dockerfile
+      args:
+        PORT: 4444
+    ports:
+      - 4444:4444
+
+  client:
+    build:
+      context: ./source/client
+      dockerfile: Dockerfile
+    ports:
+      - 4173:4173

@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  server:
+    volumes:
+      - type: bind
+        source: ./source/server/src
+        target: /var/server/src
+    build:
+      context: ./source/server
+      dockerfile: Dockerfile.dev
+      args:
+        PORT: 4444
+    ports:
+      - "4444:4444"
+
+  client:
+    volumes:
+      - ./source/client/src:/var/server/src:bind
+      - ./source/client/public:/var/server/public:bind
+    build:
+      context: ./source/client
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
